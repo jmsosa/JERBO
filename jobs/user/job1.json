@@ -10,10 +10,11 @@
 		"dayOfWeek": null,
 		"hour": null,
 		"minute": {
-			"start": 0,
-			"end": 59
+			"start": 1,
+			"end": 0,
+			"step": 2
 		},
-		"second": 30
+		"second": 0
 	},
 	"action": "log"
 }
