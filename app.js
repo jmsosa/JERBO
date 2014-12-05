@@ -2,7 +2,7 @@
 	RuleEngine = require('node-rules'),
 	walk = require('walk');
 
-(function (fileJobs, fileRules, RE, JT) {
+(function(fileJobs, fileRules, RE, JT) {
 
 	var jobs = [],
 		rules = [];
