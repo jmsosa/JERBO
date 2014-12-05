@@ -1,0 +1,19 @@
+﻿{
+	"id": 0,
+	"name": "10s@0s",
+	"description": "every 10s starting at 0",
+	"schedule": {
+		"recurs": true,
+		"year": null,
+		"month": null,
+		"date": null,
+		"dayOfWeek": null,
+		"hour": null,
+		"minute": {
+			"start": 0,
+			"end": 59
+		},
+		"second": 30
+	},
+	"action": "log"
+}
