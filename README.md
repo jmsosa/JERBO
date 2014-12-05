@@ -1,4 +1,4 @@
 JERBO
 =====
 
-Jobticket engine based on rules
+Jobtickets engine with rules based objects
