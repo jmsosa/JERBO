@@ -2,9 +2,9 @@
 	RuleEngine = require('node-rules'),
 	walk = require('walk');
 
-(function (fileJobs, fileRules, RE) {
-	var J = false,
-		jobs = [],
+(function (fileJobs, fileRules, RE, JT) {
+
+	var jobs = [],
 		rules = [];
 
 	fileJobs.on('file', function(root, stat, next) {
@@ -31,13 +31,13 @@
 
 	fileRules.on('end', function() {
 		RE = new RuleEngine(rules);
-		if (J) {
+		if (JT) {
 			jobExecution(jobs);
 		}
 	});
 
 	fileJobs.on('end', function() {
-		J = true;
+		JT = true;
 		if (RE) {
 			jobExecution(jobs);
 		}
@@ -58,6 +58,7 @@
 	}),
 	// var fileRules
 	walk.walk('./rules/default', {
-		followLinks: false
+		followLinks: false,
+		filters: ["node_modules"]
 	})
 );
