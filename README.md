@@ -1,4 +1,4 @@
-JERBO
+JERBO<sup>2</sup>
 =====
 
-Jobtickets engine with rules based objects
+Jobtickets engine - rules based / objects oriented
